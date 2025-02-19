@@ -1,0 +1,35 @@
+/* ========================================================================= */
+/* RES                                                   © MASHU DESIGN 2009 */
+/* ========================================================================= */
+#include "Res.Cpp"                     // Contains version information
+#include <Windows.H>                   // Control defines
+/* ------------------------------------------------------------------------- */
+1 ICON Res.Ico
+/* ------------------------------------------------------------------------- */
+1 VERSIONINFO
+PRODUCTVERSION VS_MAJOR,VS_MINOR,VS_BUILD,VS_REVISION
+FILEVERSION VS_MAJOR,VS_MINOR,VS_BUILD,VS_REVISION
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+  {
+    BLOCK "08090000"
+    {
+      VALUE "CompanyName",      "MhatXotic Design"
+      VALUE "FileDescription",  "Desktop Resolution Changer for Windows"
+      VALUE "FileVersion",      "Windows® XP, Vista and Seven"
+      VALUE "LegalCopyright",   "© MhatXotic Design. All Rights Reserved."
+      VALUE "OriginalFilename", "Res.Exe"
+    }
+  }
+  BLOCK "VarFileInfo"
+  {
+    VALUE "Translation", 0x0809 0x0000
+  }
+}
+/* ------------------------------------------------------------------------- */
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST Res.Man
+/* ========================================================================= */
+/* EOF                                                                   EOF */
+/* ========================================================================= */
